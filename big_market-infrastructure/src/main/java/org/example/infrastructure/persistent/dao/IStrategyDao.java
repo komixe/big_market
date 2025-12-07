@@ -1,6 +1,7 @@
 package org.example.infrastructure.persistent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.example.domain.strategy.model.entity.StrategyEntity;
 import org.example.infrastructure.persistent.po.Strategy;
 
 import java.util.List;
@@ -12,4 +13,6 @@ import java.util.List;
 public interface IStrategyDao {
 
     List<Strategy> queryStrategyList();
+
+    Strategy queryStrategyByStrategyId(Long strategyId);
 }

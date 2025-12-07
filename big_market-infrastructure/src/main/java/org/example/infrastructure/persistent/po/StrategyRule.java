@@ -10,7 +10,7 @@ public class StrategyRule {
     private String id;
 
     /**  抽奖策略ID  */
-    private Integer strategyId;
+    private Long strategyId;
 
     /**  抽奖奖品ID  */
     private Integer awardId;
