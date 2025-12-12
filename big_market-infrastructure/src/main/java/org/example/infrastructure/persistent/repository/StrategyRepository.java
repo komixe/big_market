@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.domain.strategy.model.entity.StrategyAwardEntity;
 import org.example.domain.strategy.model.entity.StrategyEntity;
 import org.example.domain.strategy.model.entity.StrategyRuleEntity;
+import org.example.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import org.example.domain.strategy.respository.IStrategyRepository;
 import org.example.infrastructure.persistent.dao.IStrategyAwardDao;
 import org.example.infrastructure.persistent.dao.IStrategyDao;
@@ -43,15 +44,22 @@ public class StrategyRepository implements IStrategyRepository {
     @Resource
     private IStrategyRuleDAO strategyRuleDAO;
 
+    /**
+     * 根据策略ID配置策略奖品配置列表
+     * @param strategyId 策略ID
+     * @return 奖品配置列表
+     */
     @Override
     public List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId) {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_KEY + strategyId;
+        // 1.优先读取缓存
         List<StrategyAwardEntity> strategyAwardEntities = redisService.getValue(cacheKey);
         if (null != strategyAwardEntities && !strategyAwardEntities.isEmpty()){
             return strategyAwardEntities;
         }
-        // 从数据库中读取数据
+        // 2.缓存未命中，从数据库中读取数据
         List<StrategyAward> strategyAwardList =  strategyAwardDao.queryStrategyAwardListByStrategyId(strategyId);
+        // 3. PO -> Entity 转换，并回填缓存
         strategyAwardEntities = new ArrayList<>(strategyAwardList.size());
         for (StrategyAward strategyAward : strategyAwardList) {
             StrategyAwardEntity strategyAwardEntity = StrategyAwardEntity.builder()
@@ -67,7 +75,9 @@ public class StrategyRepository implements IStrategyRepository {
         return strategyAwardEntities;
     }
 
-
+    /**
+     * 存储概率查找表
+     */
     @Override
     public void storeStrategyAwardSearchTables(String key, Integer rateRange, HashMap<Integer, Integer> shuffleStrategyAwardSearchRateTables) {
         // 1.存储抽奖策略范围值，如10000，用于生成10000以内的随机数
@@ -142,6 +152,15 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRuleReq.setAwardId(awardId);
         strategyRuleReq.setRuleModel(ruleModel);
         return strategyRuleDAO.queryStrategyRuleValue(strategyRuleReq);
+    }
+
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModel(Long strategyId, Integer awardId) {
+        StrategyRule strategyRuleReq = new StrategyRule();
+        strategyRuleReq.setStrategyId(strategyId);
+        strategyRuleReq.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModel(strategyId, awardId);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
     }
 
 }

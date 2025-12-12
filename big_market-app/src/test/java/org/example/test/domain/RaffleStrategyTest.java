@@ -7,6 +7,7 @@ import org.example.domain.strategy.model.entity.RaffleAwardEntity;
 import org.example.domain.strategy.model.entity.RaffleFactorEntity;
 import org.example.domain.strategy.service.IRaffleStrategy;
 import org.example.domain.strategy.service.armory.IStrategyArmory;
+import org.example.domain.strategy.service.rule.impl.RuleLockLogicFilter;
 import org.example.domain.strategy.service.rule.impl.RuleWeightLogicFilter;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,9 +32,18 @@ public class RaffleStrategyTest {
     @Resource
     private IStrategyArmory strategyArmory;
 
+    @Resource
+    private RuleLockLogicFilter ruleLockLogicFilter;
+
     @Before
     public void setUp() {
+        // 策略装配 100001、100002、100003
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100001L));
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100002L));
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100003L));
+
         ReflectionTestUtils.setField(ruleWeightLogicFilter, "userScore", 9800L);
+        ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 10L);
     }
 
     @Before
@@ -66,5 +76,19 @@ public class RaffleStrategyTest {
 
         log.info("请求参数：{}", JSON.toJSONString(raffleFactorEntity));
         log.info("测试结果：{}", JSON.toJSONString(raffleAwardEntity));
+    }
+
+    @Test
+    public void test_raffle_center_rule_lock(){
+        RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
+                .userId("CongXinn")
+                .strategyId(100003L)
+                .build();
+
+        RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(raffleFactorEntity);
+
+        log.info("请求参数：{}", JSON.toJSONString(raffleFactorEntity));
+        log.info("测试结果：{}", JSON.toJSONString(raffleAwardEntity));
+
     }
 }

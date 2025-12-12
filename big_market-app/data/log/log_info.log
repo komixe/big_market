@@ -665,3 +665,410 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 25-12-12.19:23:01.438 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":102}
 25-12-12.19:23:01.482 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-12-12.19:23:01.503 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:30:53.495 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 9924 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:30:53.496 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:30:54.394 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:30:54.396 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:30:54.423 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-12-12.21:30:55.489 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:30:55.866 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:30:55.883 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:30:57.273 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:30:57.320 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.216 seconds (JVM running for 5.131)
+25-12-12.21:30:57.813 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:30:57.919 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:30:58.253 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:30:58.290 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:30:58.295 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:30:58.299 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:30:58.371 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:30:58.379 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:30:58.407 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:30:58.410 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:30:58.413 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:30:58.423 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:30:58.435 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:30:58.487 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:30:58.504 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:31:15.922 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 23748 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:31:15.923 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:31:16.568 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:31:16.571 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:31:16.595 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-12-12.21:31:17.613 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:31:17.954 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:31:17.970 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:31:19.708 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:31:19.782 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.265 seconds (JVM running for 5.07)
+25-12-12.21:31:20.350 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:31:20.492 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:31:20.900 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:31:20.932 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:31:20.935 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:31:20.938 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:31:21.014 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:31:21.021 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:31:21.055 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:31:21.058 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:31:21.064 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:31:21.082 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:31:21.085 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:31:21.135 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:31:21.149 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:31:33.729 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 11020 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:31:33.730 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:31:34.375 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:31:34.377 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:31:34.402 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-12.21:31:35.378 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:31:35.780 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:31:35.796 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:31:37.508 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:31:37.583 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.225 seconds (JVM running for 4.924)
+25-12-12.21:31:38.099 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:31:38.215 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:31:38.524 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:31:38.562 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:31:38.564 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:31:38.568 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:31:38.583 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:31:38.590 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:31:38.617 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:31:38.619 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:31:38.622 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:31:38.633 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:31:38.635 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:31:38.685 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:31:38.694 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:36:43.773 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 18584 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:36:43.774 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:36:44.442 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:36:44.445 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:36:44.472 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-12.21:36:45.483 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:36:45.803 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:36:45.828 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:36:47.087 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:36:47.130 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.74 seconds (JVM running for 4.507)
+25-12-12.21:36:47.542 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:36:52.860 [main            ] ERROR HikariPool             - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy93.queryStrategyAwardListByStrategyId(Unknown Source)
+	at org.example.infrastructure.persistent.repository.StrategyRepository.queryStrategyAwardList(StrategyRepository.java:61)
+	at org.example.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$19908ba7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.example.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$5fe51b6f.queryStrategyAwardList(<generated>)
+	at org.example.domain.strategy.service.armory.StrategyArmory.assembleLotteryStrategy(StrategyArmory.java:31)
+	at org.example.test.domain.RaffleStrategyTest.test_strategyArmory(RaffleStrategyTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'kong'@'%' to database 'big_market'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:792)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:717)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:685)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:134)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:469)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 82 common frames omitted
+25-12-12.21:37:26.418 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 15756 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:37:26.418 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:37:27.012 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:37:27.014 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:37:27.038 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-12.21:37:27.912 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:37:28.239 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:37:28.256 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:37:29.472 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:37:29.518 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.444 seconds (JVM running for 4.07)
+25-12-12.21:37:29.919 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:37:30.146 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:37:30.224 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:37:30.313 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:37:30.316 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:37:30.320 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:37:30.337 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:37:30.349 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:37:30.408 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:37:30.412 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:37:30.419 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:37:30.440 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:37:30.452 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:37:30.496 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:37:30.507 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:38:24.062 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 16028 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:38:24.063 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:38:24.712 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:38:24.716 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:38:24.743 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-12.21:38:25.739 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:38:26.062 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:38:26.079 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:38:27.472 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:38:27.530 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.873 seconds (JVM running for 4.682)
+25-12-12.21:38:28.012 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:38:28.143 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:38:28.468 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:38:28.500 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:38:28.503 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:38:28.507 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:38:28.527 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:38:28.534 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:38:28.570 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:38:28.572 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:38:28.576 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:38:28.590 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:38:28.592 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:38:28.636 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:38:28.654 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:38:40.348 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 15224 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:38:40.349 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:38:40.976 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:38:40.979 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:38:41.003 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-12.21:38:41.918 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:38:42.255 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:38:42.271 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:38:43.672 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:38:43.725 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.749 seconds (JVM running for 4.468)
+25-12-12.21:38:44.213 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:38:44.306 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:38:44.582 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:38:44.612 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:38:44.615 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:38:44.619 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:38:44.634 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:38:44.640 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:38:44.667 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:38:44.669 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:38:44.673 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:38:44.684 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:39:02.950 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:39:27.554 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:39:27.567 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:42:16.785 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 17360 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:42:16.787 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:42:17.408 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:42:17.410 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:42:17.434 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-12.21:42:18.407 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:42:18.721 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:42:18.737 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:42:20.405 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:42:20.470 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.063 seconds (JVM running for 4.812)
+25-12-12.21:42:20.990 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:42:21.114 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:42:21.464 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:42:21.496 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:42:21.498 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:42:21.502 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:42:21.516 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:42:21.522 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:42:21.550 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:42:21.553 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:42:21.556 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:42:21.569 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:42:23.816 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:43:12.445 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s634ms354µs400ns).
+25-12-12.21:45:24.365 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s920ms886µs100ns).
+25-12-12.21:45:24.406 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:45:24.414 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:45:35.881 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 27560 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:45:35.882 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:45:36.461 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:45:36.461 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:45:36.481 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-12-12.21:45:37.328 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:45:37.678 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:45:37.696 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:45:38.801 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:45:38.847 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.293 seconds (JVM running for 3.883)
+25-12-12.21:45:39.203 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:45:39.400 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:45:39.470 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:45:39.552 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:45:39.554 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:45:39.558 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:45:39.577 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:45:39.588 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:45:39.630 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:45:39.634 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:45:39.639 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:45:39.654 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:45:39.658 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:45:39.698 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:45:39.707 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:46:15.939 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 15136 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:46:15.940 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:46:16.531 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:46:16.534 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:46:16.555 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-12-12.21:46:17.413 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:46:17.688 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:46:17.701 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:46:19.042 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:46:19.096 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.506 seconds (JVM running for 4.189)
+25-12-12.21:46:19.543 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:46:51.017 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:46:51.867 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:46:57.307 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:46:57.311 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:46:57.357 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:46:58.087 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:46:58.093 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:47:10.651 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:47:10.655 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:47:10.700 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:47:11.411 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:47:16.513 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:47:46.993 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:47:47.007 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:47:50.399 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 23880 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:47:50.399 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:47:50.999 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:47:51.000 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:47:51.020 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-12-12.21:47:51.961 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:47:52.379 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:47:52.396 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:47:53.970 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:47:54.032 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.998 seconds (JVM running for 4.857)
+25-12-12.21:47:54.561 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:48:00.570 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:48:00.800 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:48:00.827 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:48:00.829 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:48:00.833 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:48:00.844 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:48:00.852 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:48:09.834 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:48:09.839 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:48:09.888 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:48:10.674 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:48:11.935 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:48:20.933 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:48:20.956 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100003
+25-12-12.21:48:27.201 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:48:29.010 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:48:29.021 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-12-12.21:49:06.558 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.10 on LAPTOP-M7AUHHUL with PID 3304 (started by OMEN in E:\IDEA projects\big_market\big_market-app)
+25-12-12.21:49:06.559 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-12-12.21:49:07.122 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.21:49:07.122 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.21:49:07.142 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-12-12.21:49:07.977 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-12.21:49:08.278 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:49:08.295 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-12.21:49:09.494 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-12.21:49:09.536 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.295 seconds (JVM running for 3.869)
+25-12-12.21:49:09.949 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:49:10.040 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-12-12.21:49:10.325 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-12-12.21:49:10.352 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:49:10.354 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:49:10.358 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:49:10.369 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:49:10.376 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001
+25-12-12.21:49:10.399 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_4000:102,103,104,105
+25-12-12.21:49:10.401 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_5000:102,103,104,105,106,107
+25-12-12.21:49:10.404 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100001_6000:102,103,104,105,106,107,108,109
+25-12-12.21:49:10.414 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:49:10.416 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100002
+25-12-12.21:49:10.418 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:49:10.420 [main            ] INFO  StrategyRepository     - storeStrategyAwardSearchTables set key: big_market_strategy_rate_range_key_100003
+25-12-12.21:49:10.422 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-12-12.21:49:10.428 [main            ] INFO  StrategyRepository     - getRateRange get key: big_market_strategy_rate_range_key_100003, value: {}
+25-12-12.21:49:10.624 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100003,"userId":"CongXinn"}
+25-12-12.21:49:10.624 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":107}
+25-12-12.21:49:10.649 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-12-12.21:49:10.658 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
