@@ -40,8 +40,8 @@ public class DecisionTreeEngine implements IDecisionTreeEngine{
      * @return  决策树执行完成后的策略结果
      */
     @Override
-    public DefaultTreeFactory.StrategyAwardData process(String userId, Long strategyId, Integer awardId) {
-        DefaultTreeFactory.StrategyAwardData strategyAwardData = null;
+    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
+        DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
 
         // 1.获取决策树根节点
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
@@ -62,7 +62,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine{
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckTypeVO();
 
             // 3.4 本次节点产出的策略结果
-            strategyAwardData = logicEntity.getStrategyAwardData();
+            strategyAwardData = logicEntity.getStrategyAwardVO();
 
             // 3.5 根据判断结果 + 当前节点的连线，计算下一节点
             nextNode = nextNode(ruleLogicCheckTypeVO.getCode(), ruleTreeNode.getTreeNodeLineVOList());

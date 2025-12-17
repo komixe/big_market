@@ -4,14 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.domain.strategy.model.entity.StrategyAwardEntity;
 import org.example.domain.strategy.model.entity.StrategyEntity;
 import org.example.domain.strategy.model.entity.StrategyRuleEntity;
-import org.example.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import org.example.domain.strategy.model.vo.*;
 import org.example.domain.strategy.respository.IStrategyRepository;
-import org.example.infrastructure.persistent.dao.IStrategyAwardDao;
-import org.example.infrastructure.persistent.dao.IStrategyDao;
-import org.example.infrastructure.persistent.dao.IStrategyRuleDAO;
-import org.example.infrastructure.persistent.po.Strategy;
-import org.example.infrastructure.persistent.po.StrategyAward;
-import org.example.infrastructure.persistent.po.StrategyRule;
+import org.example.infrastructure.persistent.dao.*;
+import org.example.infrastructure.persistent.po.*;
 import org.example.infrastructure.redis.IRedisService;
 import org.example.types.common.Constants;
 import org.springframework.stereotype.Repository;
@@ -43,6 +39,15 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Resource
     private IStrategyRuleDAO strategyRuleDAO;
+
+    @Resource
+    private IRuleTreeDao ruleTreeDao;
+
+    @Resource
+    private IRuleTreeNodeDao ruleTreeNodeDao;
+
+    @Resource
+    private IRuleTreeNodeLineDao ruleTreeNodeLineDao;
 
     /**
      * 根据策略ID配置策略奖品配置列表
@@ -166,6 +171,60 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRuleReq.setAwardId(awardId);
         String ruleModels = strategyAwardDao.queryStrategyAwardRuleModel(strategyId, awardId);
         return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
+    }
+
+    @Override
+    public RuleTreeVO queryRuleTreeVOByTreeId(String treeId) {
+        // 1.优先从缓存获取
+        String cacheKey = Constants.RedisKey.RULE_TREE_VO_KEY + treeId;
+        RuleTreeVO ruleTreeVO = redisService.getValue(cacheKey);
+        if (null != ruleTreeVO){
+            return ruleTreeVO;
+        }
+
+        // 2.从数据库获取
+        RuleTree ruleTree = ruleTreeDao.queryRuleTreeByTreeId(treeId);
+        List<RuleTreeNode> ruleTreeNodes = ruleTreeNodeDao.queryRuleTreeNodeListByTreeId(treeId);
+        List<RuleTreeNodeLine> ruleTreeNodeLines = ruleTreeNodeLineDao.queryRuleTreeNodeLineListByTreeId(treeId);
+
+        // 3.tree node line 转换为Map结构
+        Map<String, List<RuleTreeNodeLineVO>> ruletreeNodeLineMap = new HashMap<>();
+        for (RuleTreeNodeLine ruleTreeNodeLine : ruleTreeNodeLines) {
+            RuleTreeNodeLineVO treeNodeLineVO = RuleTreeNodeLineVO.builder()
+                    .treeId(ruleTreeNodeLine.getTreeId())
+                    .ruleLimitType(RuleLimitTypeVO.valueOf(ruleTreeNodeLine.getRuleLimitType()))
+                    .ruleNodeTo(ruleTreeNodeLine.getRuleNodeTo())
+                    .ruleNodeFrom(ruleTreeNodeLine.getRuleNodeFrom())
+                    .ruleLimitValue(RuleLogicCheckTypeVO.valueOf(ruleTreeNodeLine.getRuleLimitValue()))
+                    .build();
+
+            List<RuleTreeNodeLineVO> ruleTreeNodeLineVOList =
+                    ruletreeNodeLineMap.computeIfAbsent(ruleTreeNodeLine.getRuleNodeFrom(), k -> new ArrayList<>());
+            ruleTreeNodeLineVOList.add(treeNodeLineVO);
+        }
+
+        // 4. tree node 转换为Map结构
+        Map<String, RuleTreeNodeVO> treeNodeMap = new HashMap<>();
+        for (RuleTreeNode ruleTreeNode : ruleTreeNodes) {
+            RuleTreeNodeVO ruleTreeNodeVO = RuleTreeNodeVO.builder()
+                    .treeId(ruleTreeNode.getTreeId())
+                    .ruleKey(ruleTreeNode.getRuleKey())
+                    .ruleDesc(ruleTreeNode.getRuleDesc())
+                    .ruleValue(ruleTreeNode.getRuleValue())
+                    .treeNodeLineVOList(ruletreeNodeLineMap.get(ruleTreeNode.getTreeId()))
+                    .build();
+            treeNodeMap.put(ruleTreeNode.getRuleKey(), ruleTreeNodeVO);
+        }
+
+        ruleTreeVO = RuleTreeVO.builder()
+                .treeId(ruleTree.getTreeId())
+                .treeDesc(ruleTree.getTreeDesc())
+                .treeName(ruleTree.getTreeName())
+                .treeRootRuleNode(ruleTree.getTreeRootRuleKey())
+                .treeNodeMap(treeNodeMap)
+                .build();
+        redisService.setValue(cacheKey, ruleTreeVO);
+        return ruleTreeVO;
     }
 
 }

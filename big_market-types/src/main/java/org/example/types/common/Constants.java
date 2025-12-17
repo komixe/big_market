@@ -10,6 +10,8 @@ public class Constants {
 
     public static class RedisKey{
 
+        public static final String RULE_TREE_VO_KEY = "big_market_rule_tree_";
+
         public static String STRATEGY_KEY = "big_market_strategy_key_";
 
         public static String STRATEGY_AWARD_KEY = "big_market_strategy_award_key_";
