@@ -246,4 +246,27 @@ public interface IRedisService {
      */
     <T> RBloomFilter<T> getBloomFilter(String key);
 
+    /**
+     * 获取执行key对应的原子计数值
+     *
+     * @param key 键
+     * @return 返回结果
+     */
+    Long getAtomicLong(String key);
+
+    /**
+     * 保存key对应的value值
+     *
+     * @param key    键
+     * @param value  值
+     */
+    void setAtomicLong(String key, Integer value);
+
+    /**
+     * 尝试设置key（SetNX语义：仅当key不存在时才设置成功）
+     *
+     * @param key 值
+     * @return 设置结果
+     */
+    Boolean setNx(String key);
 }
